@@ -1,3 +1,5 @@
+const FEEDBACK_URL = "https://forms.google.com/REPLACE_WITH_YOUR_FORM_URL";
+
 const statusEl = document.getElementById("status");
 const modeInputs = Array.from(document.querySelectorAll('input[name="mode"]'));
 
@@ -54,3 +56,8 @@ modeInputs.forEach((input) => {
 });
 
 loadCurrentMode();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const link = document.getElementById("feedback-link");
+  if (link) link.href = FEEDBACK_URL;
+});
