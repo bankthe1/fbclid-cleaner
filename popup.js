@@ -1,4 +1,4 @@
-const FEEDBACK_URL = "https://forms.google.com/REPLACE_WITH_YOUR_FORM_URL";
+const FEEDBACK_URL = "https://forms.gle/o7Lezu1ngbZBWKZH6";
 
 const statusEl = document.getElementById("status");
 const modeInputs = Array.from(document.querySelectorAll('input[name="mode"]'));

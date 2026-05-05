@@ -2,7 +2,7 @@
 
 A Chrome extension that removes Facebook and marketing tracking parameters from URLs — quietly, with no setup required.
 
-[Install from Chrome Web Store](https://chrome.google.com/webstore/detail/REPLACE_WITH_CWS_ID) · [Send feedback](https://forms.google.com/REPLACE_WITH_YOUR_FORM_URL) · [GitHub Sponsors](https://github.com/sponsors/bankthe1)
+[Install from Chrome Web Store](https://chrome.google.com/webstore/detail/REPLACE_WITH_CWS_ID) · [Send feedback](https://forms.gle/o7Lezu1ngbZBWKZH6) · [GitHub Sponsors](https://github.com/sponsors/bankthe1)
 
 ---
 
