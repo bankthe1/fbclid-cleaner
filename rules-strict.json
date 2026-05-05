@@ -1,0 +1,67 @@
+[
+  {
+    "id": 100,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "fbclid",
+              "utm_source",
+              "utm_medium",
+              "utm_campaign",
+              "utm_term",
+              "utm_content",
+              "gclid",
+              "dclid",
+              "msclkid",
+              "mc_eid",
+              "igshid"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "urlFilter": "|http"
+    }
+  },
+  {
+    "id": 110,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": ["connect.facebook.net"],
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "script",
+        "image",
+        "xmlhttprequest",
+        "sub_frame",
+        "ping"
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https?://www\\.facebook\\.com/tr(?:$|[/?])",
+      "domainType": "thirdParty",
+      "resourceTypes": [
+        "image",
+        "xmlhttprequest",
+        "sub_frame",
+        "ping"
+      ]
+    }
+  }
+]

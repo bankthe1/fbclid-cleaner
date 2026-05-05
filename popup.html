@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FBCLID Cleaner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Mode</h1>
+      <p class="subtitle">Pick how aggressively links and trackers are cleaned.</p>
+
+      <label class="mode">
+        <input type="radio" name="mode" value="safe" />
+        <span>
+          <strong>Safe (Default)</strong>
+          <small>Remove fbclid + core utm params only for navigations initiated from Facebook.</small>
+        </span>
+      </label>
+
+      <label class="mode">
+        <input type="radio" name="mode" value="strict" />
+        <span>
+          <strong>Strict</strong>
+          <small>Safe mode plus broader query cleanup and blocking common Meta pixel endpoints.</small>
+        </span>
+      </label>
+
+      <label class="mode">
+        <input type="radio" name="mode" value="off" />
+        <span>
+          <strong>Off</strong>
+          <small>Disable all rules temporarily.</small>
+        </span>
+      </label>
+
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "removeParams": [
+              "fbclid",
+              "utm_source",
+              "utm_medium",
+              "utm_campaign"
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "resourceTypes": ["main_frame"],
+      "urlFilter": "|http",
+      "initiatorDomains": ["facebook.com"]
+    }
+  }
+]
