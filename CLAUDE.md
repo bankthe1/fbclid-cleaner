@@ -44,6 +44,10 @@ Three components work together:
 | Strict | enabled        | enabled          |
 | Off    | disabled       | disabled         |
 
+## Launch Status
+
+See `PROGRESS.md` for current launch progress and remaining steps.
+
 ## Key Constraints
 
 - Manifest V3 only — no background pages, no `webRequest` blocking API.
